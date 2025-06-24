@@ -16,6 +16,9 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles.css">
 
+        <link rel="preload" as="image" href="packages/images/shameem1.jpg">
+
+
         <title>Mohammed Shameem - Portfolio</title>
         <link rel="icon" type="image/png" href="packages/images/cv.png" />
     </head>
@@ -67,6 +70,7 @@
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
+    
                 </div>
             </nav>
         </header>
@@ -90,27 +94,33 @@
                         </div>
 
                         <div class="home__img">
-  <svg class="home__blob" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-    <!-- Masked rounded square rotated -->
-    <mask id="mask0" mask-type="alpha">
-      <rect x="25" y="25" width="200" height="200" rx="40" ry="40" transform="rotate(80 125 125)" />
-    </mask>
+                            <svg class="home__blob" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define a clean mask shape -->
+                                <mask id="mask0" mask-type="alpha">
+                                    <rect 
+                                        x="25" 
+                                        y="25" 
+                                        width="200" 
+                                        height="200" 
+                                        rx="40" 
+                                        ry="40" 
+                                        transform="rotate(80 125 125)" 
+                                        fill="white" />
+                                </mask>
 
-    <g mask="url(#mask0)">
-      <!-- Optional background shape -->
-      <rect x="25" y="25" width="200" height="200" rx="40" ry="40" fill="var(--first-color)" transform="rotate(60 125 125)" />
+                                <g mask="url(#mask0)">
+                                    <!-- Remove background rect if not essential -->
+                                    <image 
+                                        x="0" 
+                                        y="0" 
+                                        width="250" 
+                                        height="250" 
+                                        preserveAspectRatio="xMidYMid slice"
+                                        xlink:href="packages/images/shameem1.jpg" />
+                                    </g>
+                                </svg>
+                            </div>
 
-      <!-- Fitted image with centering and cropping -->
-      <image 
-        x="0" 
-        y="0" 
-        width="250" 
-        height="250" 
-        preserveAspectRatio="xMidYMid slice"
-        xlink:href="packages/images/shameem1.jpg" />
-    </g>
-  </svg>
-</div>
 
 
                         <div class="home__data">
